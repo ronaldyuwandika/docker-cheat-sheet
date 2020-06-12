@@ -42,6 +42,19 @@ The 3.10.x kernel is [the minimum requirement](https://docs.docker.com/engine/in
 
 10.8 “Mountain Lion” or newer is required.
 
+### Windows
+
+Windows 10 64-bit: Pro, Enterprise, or Education (Build 15063 or later).
+Hyper-V and Containers Windows features must be enabled.
+
+
+The following hardware prerequisites are required to successfully run Client Hyper-V on Windows 10:
+
+    64 bit processor with Second Level Address Translation (SLAT)
+    4GB system RAM
+    BIOS-level hardware virtualization support must be enabled in the BIOS settings. For more information, see Virtualization.
+
+
 ## Installation
 
 ### Linux
@@ -71,6 +84,14 @@ docker run hello-world
 That's it, you have a running Docker container.
 
 If you are a complete Docker newbie, you should probably follow the [series of tutorials](https://docs.docker.com/engine/getstarted/) now.
+
+### Windows 
+
+* Double-click Docker Desktop Installer.exe to run the installer. Download it Here [Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/).
+* When prompted, ensure the Enable Hyper-V Windows Features option is selected on the Configuration page.
+* Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
+* When the installation is successful, click Close to complete the installation process.
+* If your admin account is different to your user account, you must add the user to the docker-users group. Run Computer Management as an administrator and navigate to  Local Users and Groups > Groups > docker-users. Right-click to add the user to the group. Log out and log back in for the changes to take effect.
 
 ### Check Version
 
